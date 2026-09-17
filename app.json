@@ -19,6 +19,7 @@
       }
     },
     "android": {
+      "package": "com.salehahmad.geoqr",
       "adaptiveIcon": {
         "backgroundColor": "#741A2F",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -27,7 +28,11 @@
       "permissions": [
         "CAMERA",
         "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION"
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
       ]
     },
     "plugins": [
@@ -43,6 +48,11 @@
           "locationWhenInUsePermission": "Allow GeoQR Attendance to verify you are inside the venue geofence."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cc6c0b1c-0600-4c17-932b-056411411efd"
+      }
+    }
   }
 }
